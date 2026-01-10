@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookMatch - Découvrez votre prochaine lecture</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">BookMatch</div>
+                <nav class="nav">
+                    <a href="#" class="nav-link active">Accueil</a>
+                    <a href="#" class="nav-link">Découvrir</a>
+                    <a href="#" class="nav-link">Tendances</a>
+                    <a href="#" class="nav-link">Ma Liste</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="search-btn" id="searchBtn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="btn-primary">Connexion</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Trouvez votre prochaine<br><span class="highlight">passion littéraire</span></h1>
+                <p class="hero-text">Des milliers de livres à découvrir. Des recommandations personnalisées. Une expérience de lecture unique.</p>
+                <div class="hero-buttons">
+                    <button class="btn-hero">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                        Commencer maintenant
+                    </button>
+                    <button class="btn-hero-outline">En savoir plus</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tendances du moment</h2>
+                <a href="#" class="see-all">Tout voir →</a>
+            </div>
+            <div class="books-row" id="trendingBooks">
+                <!-- Loaded dynamically -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>
