@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookMatch - Découvrez votre prochaine lecture</title>
+    <title>BookMatch — Collection Littéraire d'Exception</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Navigation Élégante -->
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">BookMatch</div>
+                <div class="logo">BOOKMATCH</div>
                 <nav class="nav">
                     <a href="#" class="nav-link active">Accueil</a>
-                    <a href="#" class="nav-link">Découvrir</a>
-                    <a href="#" class="nav-link">Tendances</a>
-                    <a href="#" class="nav-link">Ma Liste</a>
+                    <a href="#" class="nav-link">Collection</a>
+                    <a href="#" class="nav-link">Nouveautés</a>
+                    <a href="#" class="nav-link">Sélection</a>
+                    <a href="#" class="nav-link">À Propos</a>
                 </nav>
                 <div class="header-actions">
                     <button class="search-btn" id="searchBtn">
@@ -28,43 +29,143 @@
                             <path d="m21 21-4.35-4.35"></path>
                         </svg>
                     </button>
-                    <button class="btn-primary">Connexion</button>
+                    <button class="btn-primary">Espace Client</button>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Section Luxueuse -->
     <section class="hero">
-        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Trouvez votre prochaine<br><span class="highlight">passion littéraire</span></h1>
-                <p class="hero-text">Des milliers de livres à découvrir. Des recommandations personnalisées. Une expérience de lecture unique.</p>
+                <span class="hero-subtitle">Votre Prochaine Lecture Vous Attend</span>
+                <h1 class="hero-title">Plongez Dans<br>Vos Histoires</h1>
+                <p class="hero-text">Des milliers de romans captivants, des héroïnes inoubliables et des histoires qui vous feront vibrer. Trouvez votre prochaine obsession littéraire.</p>
                 <div class="hero-buttons">
-                    <button class="btn-hero">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                        </svg>
-                        Commencer maintenant
-                    </button>
-                    <button class="btn-hero-outline">En savoir plus</button>
+                    <button class="btn-hero-primary">Explorer les Romans</button>
+                    <button class="btn-hero-secondary">Mes Favoris</button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Défiler</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Section Mise en Avant -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-label">Les Incontournables</span>
+                <h2 class="section-title">Nos Coups de Cœur</h2>
+                <p class="section-description">Les romans qui nous ont fait rêver, pleurer et vibrer. Des histoires qu'on ne peut pas lâcher!</p>
+            </div>
+            <div class="featured-grid" id="trendingBooks">
+                <!-- Chargé dynamiquement -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Catégories Élégantes -->
+    <section class="categories-section">
+        <div class="container-full">
+            <div class="section-intro centered">
+                <span class="section-label">Trouvez Votre Genre</span>
+                <h2 class="section-title">Quel Univers Vous Appelle?</h2>
+            </div>
+            <div class="categories-grid">
+                <div class="category-card" data-genre="romance">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3>Romance</h3>
+                        <span class="category-count">450+ Ouvrages</span>
+                        <div class="category-line"></div>
+                    </div>
+                </div>
+                <div class="category-card" data-genre="dark-romance">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3>Dark Romance</h3>
+                        <span class="category-count">320+ Ouvrages</span>
+                        <div class="category-line"></div>
+                    </div>
+                </div>
+                <div class="category-card" data-genre="fantasy">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3>Fantasy</h3>
+                        <span class="category-count">280+ Ouvrages</span>
+                        <div class="category-line"></div>
+                    </div>
+                </div>
+                <div class="category-card" data-genre="thriller">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3>Thriller</h3>
+                        <span class="category-count">210+ Ouvrages</span>
+                        <div class="category-line"></div>
+                    </div>
+                </div>
+                <div class="category-card" data-genre="paranormal">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3>Paranormal</h3>
+                        <span class="category-count">270+ Ouvrages</span>
+                        <div class="category-line"></div>
+                    </div>
+                </div>
+                <div class="category-card" data-genre="contemporary">
+                    <div class="category-overlay"></div>
+                    <div class="category-content">
+                        <h3>Contemporain</h3>
+                        <span class="category-count">390+ Ouvrages</span>
+                        <div class="category-line"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trending -->
-    <section class="section">
+    <!-- Section Collection Complète -->
+    <section class="collection-section">
         <div class="container">
-            <div class="section-header">
-                <h2>Tendances du moment</h2>
-                <a href="#" class="see-all">Tout voir →</a>
+            <div class="section-intro">
+                <span class="section-label">Bibliothèque Complète</span>
+                <h2 class="section-title">Tous Nos Romans</h2>
             </div>
-            <div class="books-row" id="trendingBooks">
-                <!-- Loaded dynamically -->
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="romance">Romance</button>
+                <button class="filter-btn" data-filter="dark-romance">Dark Romance</button>
+                <button class="filter-btn" data-filter="fantasy">Fantasy</button>
+                <button class="filter-btn" data-filter="thriller">Thriller</button>
+                <button class="filter-btn" data-filter="paranormal">Paranormal</button>
+            </div>
+            <div class="collection-grid" id="allBooks">
+                <!-- Chargé dynamiquement -->
+            </div>
+            <div class="load-more-container">
+                <button class="btn-load-more" id="loadMoreBtn">Voir Plus d'Ouvrages</button>
             </div>
         </div>
     </section>
+
+    <!-- Section Populaires -->
+    <section class="popular-section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="section-label">Tendances du Moment</span>
+                <h2 class="section-title">Ce Que Tout Le Monde Lit</h2>
+                <a href="#" class="see-all-link">Voir Tout →</a>
+            </div>
+            <div class="popular-grid" id="popularBooks">
+                <!-- Chargé dynamiquement -->
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
